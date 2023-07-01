@@ -18,6 +18,7 @@ RUN docker-php-ext-install \
     exif \
     fileinfo \
     gd \
+    opcache \
     pdo \
     pdo_mysql
 
