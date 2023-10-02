@@ -25,7 +25,6 @@ services:
     container_name: file-manager-service-fpm
     volumes:
       - ./laravel:/var/www/html
-      - ./logs:/var/www/html/storage/logs/
       - ./fpm/lfm.ini:/usr/local/etc/php/conf.d/lfm.ini
     networks:
       - file-manager-service
