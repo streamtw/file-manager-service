@@ -5,3 +5,9 @@
 ```
 bash up.sh
 ```
+
+### Start service with existing image
+
+```
+docker-compose up
+```
