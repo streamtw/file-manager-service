@@ -8,7 +8,11 @@ RUN apt-get update && \
         # libjpeg-dev \
         # libjpeg62-turbo-dev \
         libpng-dev \
-        vim
+        # zip required by composer
+        libzip-dev \
+        vim \
+        # zip required by composer
+        zip
 
 # RUN pecl install imagick && docker-php-ext-enable imagick
 
@@ -20,6 +24,8 @@ RUN docker-php-ext-install \
     gd \
     opcache \
     pdo \
-    pdo_mysql
+    pdo_mysql \
+    # zip required by composer
+    zip
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
